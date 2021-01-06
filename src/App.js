@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./App.css"
 import axios from 'axios'
 
 function App(){
@@ -34,6 +35,10 @@ function App(){
           <h2>{character.name}</h2>
 
           <div className="details">
+            <p> {character.slug} </p>
+            <p> {character.work.occupation} </p>
+            <p> <img src={character.images.sm} alt="Movie Poster"/> </p>
+
           </div>
         </div>
         )
